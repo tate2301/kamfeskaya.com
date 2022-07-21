@@ -2,9 +2,10 @@ import Image from 'next/image';
 
 export default function Bio() {
   return (
-    <div className="grid grid-cols-4 py-12 mb-12 lg:py-24 lg:mb-24">
+    <div className="grid grid-cols-4 py-12 mb-12 lg:mb-12">
       <div className="col-span-4 lg:col-span-1">
-        <h3 className="text-3xl font-bold">Hey stranger</h3>
+        <h3 className="text-3xl font-bold">Meet and Greet</h3>
+        <p className="mt-2">Nice to meet you too, kind Earthling.</p>
       </div>
       <div className="col-span-4 lg:col-span-3">
         <p className="py-2">
@@ -40,7 +41,7 @@ export default function Bio() {
           <Image
             width={280}
             height={124}
-            src="/signature.avif"
+            src="/signature.png"
             alt="Signature"
           />
           <p className="py-4 text-sm text-gray-500">

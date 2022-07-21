@@ -1,7 +1,7 @@
 export default function BlogPreview() {
   return (
     <div className="py-12">
-      <h2 className="text-5xl font-bold text-gray-800">
+      <h2 className="text-2xl font-bold text-gray-700">
         Want to read my Two-Cents?
       </h2>
       <p className="mt-2">
