@@ -11,7 +11,7 @@ export default function Banner() {
           height={128}
         />
       </div>
-      <h1 className="subpixel-antialiased font-bold leading-10 tracking-tighter text-gray-600 lg:text-7xl">
+      <h1 className="text-6xl subpixel-antialiased font-bold leading-10 tracking-tighter text-gray-600 lg:text-7xl">
         Hey there! I&#39;m Tatenda, the{' '}
         <span className="text-orange-500">Halfstack Developer</span> +{' '}
         <span className="text-orange-500">Blockchain Engineer </span>based in{' '}
