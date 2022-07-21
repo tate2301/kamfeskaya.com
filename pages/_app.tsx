@@ -3,7 +3,11 @@ import { AppProps /* , AppContext */ } from 'next/app';
 import 'styles/globals.css';
 
 function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <div className="text-xl text-gray-700">
+      <Component {...pageProps} />
+    </div>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for
