@@ -1,52 +1,77 @@
 import Image from 'next/image';
-import OptimizedImage from './utils/OptimizedImage';
+import Link from 'next/link';
+import ForzikReactImage from '../public/img/forzik-github.png';
 
 export default function Bio() {
   return (
-    <div className="grid grid-cols-4 gap-4 py-12 mb-12 lg:gap-12 lg:mb-12">
-      <div className="col-span-4 lg:col-span-1">
-        <div className="col-span-4">
-          <OptimizedImage
-            src={'img/forzik-react.png'}
-            alt={"Forzik's profile picture"}
-            layout="fill"
-            className="w-full"
-          />
+    <div className="grid grid-cols-4 gap-4 mb-12 lg:py-12 lg:mb-12">
+      <div className="col-span-4">
+        <div className="mb-8">
+          <Link href="https://github.com/Pagka/forzik">
+            <a target="_blank">
+              <Image
+                src={ForzikReactImage}
+                alt={"Forzik's profile picture"}
+                className="rounded-xl"
+              />
+            </a>
+          </Link>
         </div>
-        <h3 className="text-4xl font-bold lg:text-4xl">Meet and Greet</h3>
-        <p className="hidden lg:mt-2 lg:block">
-          Nice to meet you too, kind Earthling.
-        </p>
       </div>
-      <div className="col-span-4 lg:col-span-3">
+      <div className="col-span-4">
+        <h3 className="text-4xl font-bold lg:text-4xl">
+          Get up to <span className="text-orange-500">Speed</span> with Chris
+        </h3>
+      </div>
+      <div className="col-span-4">
+        <p className="mb-4 lg:mt-2">
+          Since you are here, let me tell you what a little something!
+        </p>
         <p className="py-2">
-          I wanted to say a few words on our mission, let us see if that
-          resonates with you!
-        </p>{' '}
-        <p className="py-2">
-          We help teams work more thoughtfully. We started by fixing the way
-          they shared knowledge, and built{' '}
+          🇿🇼 Zimabwean startups have been facing a really big problem with
+          processing local payments online. I personally believe that{' '}
+          <Link href={'https://paynow.co.zw'}>
+            <a className="font-bold">Paynow</a>
+          </Link>{' '}
           <span className="font-medium">
-            the simplest possible tool making all knowledge accessible, by
-            default, in teams.
+            is at the core of the it, for every single one of all Zimbabwean
+            Founders 🕵🏽‍♀️ 👨🏻‍⚕️ 👨🏾‍💻 👩🏾‍💻 🧑🏾‍🔧 🧑🏾‍🎓
           </span>{' '}
         </p>
         <p className="py-2">
-          We started at Hack Week at Square in 2013 and since then released
-          hundreds of iterations, have been backed by outstanding partners like
-          YCombinator, Index or Spark, and most importantly improved the way
-          thousands of teams work everyday. We work remotely, perpetually
-          challenge how we collaborate and we put great care and passion in what
+          I know you are saying, &#39;Come on! Paynow? You&#39;re just gonna
+          throw them under the bus like that?&#39;. Actually, you&#39;re most
+          probably asking, &#39;Who is Paynow even?&#39;. Well, let me get you
+          up to speed!{' '}
+          <span className="itallic">
+            Paynow is a Zimabwean based Digital Payments Processor, supporting
+            VISA, MASTERCARD, EcoCash, OneMoney, ZIMSWITCH and Telecash(If its
+            still a thing lol).
+          </span>
+          Truth is they are the only viable payment gateway for any startup that
+          wants to support local payments on their platform.
         </p>
-        we do.
         <p className="py-2">
-          We’re looking for the brightest folks to join us:{' '}
-          <span className="font-bold">
-            You who deeply care about what you do, how you work, thrive for
-            simplicity and care about good design
-          </span>{' '}
-          If that resonates and you think you can bring us as much as we can
-          bring you, we are excited to hear from you!
+          Since they are the only service provider in this niche, they do not
+          have incentive to innovate, or maybe they just do not want to.
+          Whichever the case, the result is a 3-quarter backed platform with{' '}
+          <span className="font-bold text-red-600">
+            absolutely no regard for the Developer Experience.
+          </span>
+        </p>
+        <p className="py-2">
+          I have teamed up with a group of very intelligent individuals, from
+          Zimbabwe and abroad, to address this problem.{' '}
+          <span className="font-bold text-orange-500">Enter Forzik!</span> We
+          are building Digital Payments Infrastructure that won&#39;t leave you
+          questioning your purpose in life.{' '}
+          <span className="font-bold text-orange-500">
+            I am inviting you to join us in providing young Startups with the
+            tools they need to thrive.
+          </span>
+        </p>
+        <p className="pt-4">
+          The Developer platform for Developers, by Developers! 🎉 🎉 🎉
         </p>
         <div className="py-4 mt-4">
           <Image

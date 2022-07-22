@@ -20,7 +20,7 @@ export default function Banner() {
       <p className="py-4 mt-8 text-2xl lg:text-3xl">
         I help startups and developers build revolutionary products that are
         easy to use. I am a big motorsport enthusiast, and will challenge you to
-        a Kart race any day.
+        a Kart race any day 🏎 🏎 🏎
       </p>
     </div>
   );

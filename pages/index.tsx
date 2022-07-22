@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <div>
       <Navbar />
-      <div className="container px-4 mx-auto">
+      <div className="container max-w-5xl px-4 mx-auto">
         <Banner />
         <Bio />
         <ProjectsPreview />
