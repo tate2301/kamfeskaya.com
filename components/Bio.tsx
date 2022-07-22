@@ -1,11 +1,22 @@
 import Image from 'next/image';
+import OptimizedImage from './utils/OptimizedImage';
 
 export default function Bio() {
   return (
-    <div className="grid grid-cols-4 py-12 mb-12 lg:mb-12">
+    <div className="grid grid-cols-4 gap-4 py-12 mb-12 lg:gap-12 lg:mb-12">
       <div className="col-span-4 lg:col-span-1">
-        <h3 className="text-3xl font-bold">Meet and Greet</h3>
-        <p className="mt-2">Nice to meet you too, kind Earthling.</p>
+        <div className="col-span-4">
+          <OptimizedImage
+            src={'img/forzik-react.png'}
+            alt={"Forzik's profile picture"}
+            layout="fill"
+            className="w-full"
+          />
+        </div>
+        <h3 className="text-4xl font-bold lg:text-4xl">Meet and Greet</h3>
+        <p className="hidden lg:mt-2 lg:block">
+          Nice to meet you too, kind Earthling.
+        </p>
       </div>
       <div className="col-span-4 lg:col-span-3">
         <p className="py-2">
