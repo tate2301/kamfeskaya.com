@@ -5,7 +5,7 @@ import ProjectsPreview from 'components/projects/Preview';
 
 export default function Main() {
   return (
-    <div>
+    <div className="snip-bg">
       <Navbar />
       <div className="container max-w-5xl px-4 mx-auto">
         <Banner />

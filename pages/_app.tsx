@@ -4,7 +4,7 @@ import 'styles/globals.css';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="text-lg text-gray-700 lg:text-xl bg-gray-50">
+    <div className="text-lg text-gray-600 lg:text-xl ">
       <Component {...pageProps} />
     </div>
   );
