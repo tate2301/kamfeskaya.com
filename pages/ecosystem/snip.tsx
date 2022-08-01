@@ -13,9 +13,11 @@ export default function Shot() {
         </p>
         <div className="flex items-center justify-center w-full gap-4 py-8">
           <div className="max-w-md mx-auto">
-            <button className="w-full px-8 py-3 text-lg font-semibold bg-gray-800 border-2 rounded-full text-zinc-50 ">
-              Launch app
-            </button>
+            <a href="https://snip.kamfeskaya.com">
+              <button className="w-full px-8 py-3 text-lg font-semibold bg-gray-800 border-2 rounded-full text-zinc-50 ">
+                Launch app
+              </button>
+            </a>
           </div>
         </div>
       </div>
