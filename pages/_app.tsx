@@ -2,14 +2,18 @@ import { AppProps /* , AppContext */ } from 'next/app';
 
 import 'styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
-import { midnightTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { darkTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiConfig } from 'wagmi';
 import { chains, wagmiClient } from 'lib/rainbowkit';
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider theme={midnightTheme()} chains={chains}>
+      <RainbowKitProvider
+        showRecentTransactions={true}
+        theme={darkTheme()}
+        chains={chains}
+      >
         <div className="text-lg text-gray-600 lg:text-xl ">
           <Component {...pageProps} />
         </div>
