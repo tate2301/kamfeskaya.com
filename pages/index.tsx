@@ -1,20 +1,22 @@
-import { Banner, Bio, BlogPreview, PodcastPreview } from 'components';
+import { Banner, Bio } from 'components';
 import Footer from 'components/nav/Footer';
 import Navbar from 'components/nav/Navbar';
-import ProjectsPreview from 'components/projects/Preview';
+import Head from 'next/head';
 
 export default function Main() {
   return (
-    <div className="snip-bg">
-      <Navbar />
-      <div className="container max-w-5xl px-4 mx-auto">
-        <Banner />
-        <Bio />
-        <ProjectsPreview />
-        <BlogPreview />
-        <PodcastPreview />
+    <div className="dark:bg-gray-900 dark:text-gray-100 bg-blend-normal">
+      <Head>
+        <title>Tatenda. C. Chinyamakobvu - Senior Fullstack Engineer</title>
+      </Head>
+      <div className="snip-bg">
+        <Navbar />
+        <div className="container max-w-5xl px-4 py-12 mx-auto">
+          <Banner />
+          <Bio />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

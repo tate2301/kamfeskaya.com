@@ -11,11 +11,16 @@ export default function Banner() {
           height={128}
         />
       </div>
-      <h1 className="text-4xl subpixel-antialiased font-bold tracking-tighter text-gray-600 lg:text-7xl">
+      <h1 className="text-4xl subpixel-antialiased font-bold tracking-tighter text-gray-600 dark:text-gray-200 lg:text-7xl">
         Hey there! I&#39;m Tatenda, the{' '}
-        <span className="text-orange-500">Halfstack Developer</span> +{' '}
-        <span className="text-red-500">Blockchain Engineer </span>based in{' '}
-        Harare, Zimbabwe
+        <span className="text-orange-500 dark:text-orange-400">
+          Halfstack Developer
+        </span>{' '}
+        +{' '}
+        <span className="text-red-500 dark:text-red-400">
+          Blockchain Engineer{' '}
+        </span>
+        based in Harare, Zimbabwe
       </h1>
       <p className="py-4 mt-8 text-2xl lg:text-3xl">
         I help startups and developers build revolutionary products that are

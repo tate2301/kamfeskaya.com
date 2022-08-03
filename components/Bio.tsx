@@ -74,13 +74,7 @@ export default function Bio() {
           The Developer platform for Developers, by Developers! 🎉 🎉 🎉
         </p>
         <div className="py-4 mt-4">
-          <Image
-            width={280}
-            height={124}
-            src="/signature.png"
-            alt="Signature"
-          />
-          <p className="py-4 text-sm text-gray-500">
+          <p className="py-4 font-semibold text-gray-500 dark:text-gray-100">
             Tatenda Christopher Chinyamakobvu
             <br />
             <span className="font-medium">Halfstack Developer</span>

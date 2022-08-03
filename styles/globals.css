@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
 
 @font-face {
   font-family: 'Circular';
@@ -23,6 +24,10 @@
 *,
 body {
   font-family: Circular, sans-serif;
+}
+
+.cursive {
+  font-family: 'Inspiration', cursive !important;
 }
 
 .twizard-bg {
