@@ -8,9 +8,9 @@ export default function LatestPost(props: {
   };
 }) {
   return (
-    <div className="flex flex-col gap-6 p-4 md:flex-row md:gap-16">
+    <div className="flex flex-col gap-8 p-4 lg:gap-16 md:flex-row">
       <div
-        className="flex-1 w-full bg-gray-200 bg-blend-normal animate-pulse rounded-3xl md:h-128 dark:bg-gray-700"
+        className="h-64 bg-gray-200 md:w-full md:flex-1 bg-blend-normal rounded-3xl lg:h-96 dark:bg-gray-700"
         style={{
           backgroundImage: `url('${props.thumbnail.responsiveImage.webpSrcSet}')`,
           backgroundPosition: 'center',
