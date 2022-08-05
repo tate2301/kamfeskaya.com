@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+@import url('./fonts/stylesheet.css');
 
 @font-face {
   font-family: 'Circular';
@@ -23,11 +23,15 @@
 
 *,
 body {
-  font-family: Circular, sans-serif;
+  font-family: 'GT Walsheim Pro', sans-serif;
 }
 
-.cursive {
-  font-family: 'Inspiration', cursive !important;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'GT Walsheim Pro', sans-serif;
 }
 
 .twizard-bg {

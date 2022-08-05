@@ -1,6 +1,6 @@
 import EcosystemLayout from 'components/layouts/ecosystem';
 
-export default function Divider() {
+export default function FBPixel() {
   return (
     <EcosystemLayout name="fbpixel">
       <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 text-center">

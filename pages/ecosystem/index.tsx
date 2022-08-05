@@ -1,11 +1,20 @@
 import EcosystemLayout from 'components/layouts/ecosystem';
+import { useEffect } from 'react';
+import { annotate } from 'rough-notation';
 
-export default function Stylepad() {
+export default function Ecosystem() {
+  useEffect(() => {
+    const anonHeading = annotate(document?.querySelector('#eco')!, {
+      type: 'circle',
+      color: 'orange',
+    });
+    anonHeading.show();
+  }, []);
   return (
-    <EcosystemLayout name={'Kamfeskaya Ecosystem'} bg={'fbpixel'}>
-      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 text-center ">
+    <EcosystemLayout name={'Ecosystem'} bg={'fbpixel'}>
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center ">
         <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-gray-800 dark:text-gray-100 md:text-6xl">
-          The Ecosystem
+          The <span id="eco">Ecosystem</span>
         </h2>
         <p className="max-w-xl pb-4 text-xl font-medium text-gray-600 dark:text-gray-300">
           As a developer I have made myself belive in a concept that in order to
@@ -16,14 +25,17 @@ export default function Stylepad() {
         <div className="flex items-center justify-center w-full gap-4 py-8">
           <div className="max-w-md mx-auto">
             <a href="https://snip.kamfeskaya.com">
-              <button className="w-full px-8 py-3 text-lg font-semibold bg-gray-800 border-2 rounded-full dark:bg-white dark:text-gray-800 dark:border-gray-800 text-zinc-50 ">
+              <button
+                id="contribute"
+                className="w-full px-8 py-3 text-lg font-semibold bg-gray-800 border-2 rounded-full dark:bg-white dark:text-gray-800 dark:border-gray-800 text-zinc-50 "
+              >
                 I want to contribute
               </button>
             </a>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center min-h-screen px-4 py-12 text-center ">
+      <div className="flex flex-col items-center min-h-screen px-4 pb-12 text-center ">
         <h2 className="text-5xl font-bold text-gray-800 dark:text-gray-50">
           Products
         </h2>

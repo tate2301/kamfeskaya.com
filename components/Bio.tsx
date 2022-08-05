@@ -1,8 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { annotate } from 'rough-notation';
 import ForzikReactImage from '../public/img/forzik-github.png';
 
 export default function Bio() {
+  useEffect(() => {
+    const anonHeading = annotate(document?.querySelector('#name')!, {
+      type: 'underline',
+      color: 'orange',
+    });
+    anonHeading.show();
+    annotate(document?.querySelector('#head')!, {
+      type: 'underline',
+      color: 'orange',
+    }).show();
+  }, []);
   return (
     <div className="grid grid-cols-4 gap-4 mb-12 lg:py-12 lg:mb-12">
       <div className="col-span-4">
@@ -18,14 +31,12 @@ export default function Bio() {
           </Link>
         </div>
       </div>
-      <div className="col-span-4">
-        <h3 className="text-4xl font-bold lg:text-4xl">
-          Get up to <span className="text-orange-500">Speed</span> with Chris
-        </h3>
-      </div>
+      <div className="col-span-4"></div>
       <div className="col-span-4">
         <p className="mb-4 lg:mt-2">
-          Since you are here, let me tell you what a little something!
+          <span id="head">
+            Since you are here, let me tell you what a little something!
+          </span>
         </p>
         <p className="py-2">
           🇿🇼 Zimabwean startups have been facing a really big problem with
@@ -77,7 +88,9 @@ export default function Bio() {
           <p className="py-4 font-semibold text-gray-500 dark:text-gray-100">
             Tatenda Christopher Chinyamakobvu
             <br />
-            <span className="font-medium">Halfstack Developer</span>
+            <span id="name" className="font-medium">
+              Halfstack Developer
+            </span>
           </p>
         </div>
       </div>
