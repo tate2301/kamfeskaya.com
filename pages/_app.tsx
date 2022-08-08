@@ -5,8 +5,20 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { darkTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiConfig } from 'wagmi';
 import { chains, wagmiClient } from 'lib/rainbowkit';
+import { useEffect } from 'react';
+// @ts-ignore
+import mixpanel from 'mixpanel-browser';
+import { useRouter } from 'next/router';
+
+const MIXPANEL_KEY = process.env.MIXPANEL_KEY;
 
 function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    mixpanel.init(MIXPANEL_KEY, { debug: true });
+    mixpanel.track('Page Visit: ' + router.pathname);
+  }, []);
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
