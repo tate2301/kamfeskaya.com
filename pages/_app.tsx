@@ -16,9 +16,13 @@ function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    mixpanel.init(MIXPANEL_KEY, { debug: true });
-    mixpanel.track('Page Visit: ' + router.pathname);
-  }, []);
+    mixpanel.init(MIXPANEL_KEY, {
+      loaded: function () {
+        mixpanel.track('Page Visit: ' + router.pathname);
+      },
+    });
+  }, [router]);
+
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider
