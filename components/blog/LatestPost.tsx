@@ -18,7 +18,7 @@ export default function LatestPost(props: {
         }}
       />
       <div className="w-full py-4 md:w-1/3">
-        <h3 className="text-4xl font-bold text-gray-800 dark:text-gray-100">
+        <h3 className="text-4xl font-medium text-gray-800 dark:text-gray-100">
           {props.title}
         </h3>
         <p className="py-8 text-gray-500 dark:text-gray-300">

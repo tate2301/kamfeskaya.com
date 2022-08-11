@@ -1,21 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect } from 'react';
-import { annotate } from 'rough-notation';
 import ForzikReactImage from '../public/img/forzik-github.png';
 
 export default function Bio() {
-  useEffect(() => {
-    const anonHeading = annotate(document?.querySelector('#name')!, {
-      type: 'underline',
-      color: 'orange',
-    });
-    anonHeading.show();
-    annotate(document?.querySelector('#head')!, {
-      type: 'underline',
-      color: 'orange',
-    }).show();
-  }, []);
   return (
     <div className="grid grid-cols-4 gap-4 mb-12 lg:py-12 lg:mb-12">
       <div className="col-span-4">
@@ -42,9 +29,9 @@ export default function Bio() {
           🇿🇼 Zimabwean startups have been facing a really big problem with
           processing local payments online. I personally believe that{' '}
           <Link href={'https://paynow.co.zw'}>
-            <a className="font-bold">Paynow</a>
+            <a className="font-medium text-radix-slate-slate12">Paynow</a>
           </Link>{' '}
-          <span className="font-medium">
+          <span className="font-medium text-radix-slate-slate12">
             is at the core of the it, for every single one of all Zimbabwean
             Founders 🕵🏽‍♀️ 👨🏻‍⚕️ 👨🏾‍💻 👩🏾‍💻 🧑🏾‍🔧 🧑🏾‍🎓
           </span>{' '}
@@ -66,17 +53,17 @@ export default function Bio() {
           Since they are the only service provider in this niche, they do not
           have incentive to innovate, or maybe they just do not want to.
           Whichever the case, the result is a 3-quarter backed platform with{' '}
-          <span className="font-bold text-red-600">
+          <span className="font-medium text-radix-red-red9">
             absolutely no regard for the Developer Experience.
           </span>
         </p>
         <p className="py-2">
           I have teamed up with a group of very intelligent individuals, from
           Zimbabwe and abroad, to address this problem.{' '}
-          <span className="font-bold text-orange-500">Enter Forzik!</span> We
+          <span className="font-medium text-orange-600">Enter Forzik!</span> We
           are building Digital Payments Infrastructure that won&#39;t leave you
           questioning your purpose in life.{' '}
-          <span className="font-bold text-orange-500">
+          <span className="font-medium text-orange-600">
             I am inviting you to join us in providing young Startups with the
             tools they need to thrive.
           </span>

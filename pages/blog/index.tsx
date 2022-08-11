@@ -63,7 +63,7 @@ export default function Blog({
         </div>
       </div>
       <div className="container pb-12 mx-auto">
-        <h2 className="text-5xl font-bold text-gray-800 dark:text-gray-100">
+        <h2 className="text-5xl font-medium text-gray-800 dark:text-gray-100">
           From The Ecosystem
         </h2>
       </div>

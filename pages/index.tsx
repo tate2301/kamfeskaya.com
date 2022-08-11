@@ -9,7 +9,7 @@ export default function Main() {
       <Head>
         <title>Tatenda. C. Chinyamakobvu - Senior Fullstack Engineer</title>
       </Head>
-      <div className="snip-bg">
+      <div className="main-bg">
         <Navbar />
         <div className="container max-w-5xl px-4 py-12 mx-auto">
           <Banner />

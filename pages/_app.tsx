@@ -30,7 +30,7 @@ function App({ Component, pageProps }: AppProps) {
         theme={darkTheme()}
         chains={chains}
       >
-        <div className="text-lg text-gray-600 lg:text-xl ">
+        <div className="text-lg text-gray-500 lg:text-xl ">
           <Component {...pageProps} />
         </div>
       </RainbowKitProvider>

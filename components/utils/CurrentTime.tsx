@@ -31,8 +31,8 @@ export default function CurrentTime() {
   return (
     <div className="flex">
       <div className="flex flex-col justify-center w-40 px-4 py-2 bg-white border border-gray-100 rounded-md align-center">
-        <p className="mb-1 text-sm font-bold">🇿🇼 Harare</p>
-        <p className="font-bold">
+        <p className="mb-1 text-sm font-medium">🇿🇼 Harare</p>
+        <p className="font-medium">
           {timeEmoji} {time}
         </p>
       </div>

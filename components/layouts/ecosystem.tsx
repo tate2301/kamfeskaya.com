@@ -1,4 +1,5 @@
 import EcosystemNavbar from 'components/ecosystem/navbar';
+import Footer from 'components/nav/Footer';
 import Head from 'next/head';
 
 export default function EcosystemLayout({
@@ -18,8 +19,11 @@ export default function EcosystemLayout({
         <title>{name} | Kamfeskaya Ecosystem</title>
       </Head>
       <div className={`text-sm ${bg}-bg`}>
-        <EcosystemNavbar name={name} />
-        {children}
+        <div className="container mx-auto">
+          <EcosystemNavbar name={name} />
+          {children}
+          <Footer />
+        </div>
       </div>
     </div>
   );

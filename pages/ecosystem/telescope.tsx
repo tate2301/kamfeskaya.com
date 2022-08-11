@@ -1,10 +1,9 @@
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import EcosystemLayout from 'components/layouts/ecosystem';
-import Link from 'next/link';
 
 export default function Ecosystem() {
   return (
-    <EcosystemLayout name={'Ecosystem'} bg={'fbpixel'}>
+    <EcosystemLayout name={'Telescope 🔭'} bg={'fbpixel'}>
       <div className="flex flex-col justify-center px-4 py-12 ">
         <h2 className="py-6 text-4xl font-semibold text-radix-slate-slate12 dark:text-gray-100 md:text-6xl">
           The Kamfeskaya <br /> <span id="eco">Ecosystem</span>
@@ -16,16 +15,14 @@ export default function Ecosystem() {
           change the world.
         </p>
         <div className="flex gap-4 pt-8">
-          <Link href="/ecosystem/contribute">
-            <a>
-              <button
-                id="contribute"
-                className="flex items-center w-full gap-4 px-6 py-3 font-medium border-2 rounded-md bg-radix-slate-slate12 dark:bg-white dark:text-gray-800 dark:border-gray-800 text-zinc-50 "
-              >
-                I want to contribute <ArrowRightIcon />
-              </button>
-            </a>
-          </Link>
+          <a href="https://mailbox.kamfeskaya.com">
+            <button
+              id="contribute"
+              className="flex items-center w-full gap-4 px-6 py-3 font-medium border-2 rounded-md bg-radix-slate-slate12 dark:bg-white dark:text-gray-800 dark:border-gray-800 text-zinc-50 "
+            >
+              I want to contribute <ArrowRightIcon />
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col px-4 py-12 ">
