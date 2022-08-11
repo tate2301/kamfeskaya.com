@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="w-screen m-0 bg-transparent dark:bg-gray-900 dark:text-gray-100">
       <div className="container flex flex-col items-center justify-between max-w-5xl mx-auto lg:py-4">
         <div className="flex flex-col items-center justify-end w-full lg:flex-row lg:justify-between">
-          <div className="justify-between hidden gap-8 py-4 text-radix-slate-slate12 lg:flex">
+          <div className="flex justify-between gap-8 py-4 text-radix-slate-slate12">
             <Link href={'/ecosystem'}>
               <a className="text-base ">Product Ecosystem</a>
             </Link>
