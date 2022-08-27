@@ -1,12 +1,12 @@
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import EcosystemLayout from 'components/layouts/ecosystem';
 
-export default function Ecosystem() {
+export default function Telescope() {
   return (
     <EcosystemLayout name={'Telescope 🔭'} bg={'fbpixel'}>
       <div className="flex flex-col justify-center px-4 py-12 ">
         <h2 className="py-6 text-4xl font-semibold text-radix-slate-slate12 dark:text-gray-100 md:text-6xl">
-          The Kamfeskaya <br /> <span id="eco">Ecosystem</span>
+          The Reblur <br /> <span id="eco">Kit</span>
         </h2>
         <p className="max-w-xl pb-4 text-lg font-base dark:text-gray-300">
           Glad you made it here mate! I am on journey, to build a $50k MRR

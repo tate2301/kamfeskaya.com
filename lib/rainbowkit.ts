@@ -10,7 +10,7 @@ const { chains, provider } = configureChains(
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()],
 );
 const { connectors } = getDefaultWallets({
-  appName: 'Kamfeskaya Ecosystem',
+  appName: 'Reblur',
   chains,
 });
 const wagmiClient = createClient({

@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 export default function Ecosystem() {
   return (
-    <EcosystemLayout name={'Ecosystem'} bg={'fbpixel'}>
+    <EcosystemLayout name={'Reblur'} bg={'fbpixel'}>
       <div className="flex flex-col justify-center px-4 py-12 ">
         <h2 className="py-6 text-4xl font-semibold text-radix-slate-slate12 dark:text-gray-100 md:text-6xl">
-          The Kamfeskaya <br /> <span id="eco">Ecosystem</span>
+          The Reblur Kit
         </h2>
         <p className="max-w-xl pb-4 text-lg font-base dark:text-gray-300">
           Glad you made it here mate! I am on journey, to build a $50k MRR
@@ -32,7 +32,7 @@ export default function Ecosystem() {
         <h2 className="text-2xl font-medium lg:text-4xl text-radix-slate-slate12 dark:text-gray-50">
           Wanna see the stuff?
         </h2>
-        <p className="text-xl dark:text-gray-200">
+        <p className="text-base dark:text-gray-200">
           Let me walk you through the catalog
         </p>
       </div>

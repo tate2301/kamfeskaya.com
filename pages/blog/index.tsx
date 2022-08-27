@@ -64,7 +64,7 @@ export default function Blog({
       </div>
       <div className="container pb-12 mx-auto">
         <h2 className="text-5xl font-medium text-gray-800 dark:text-gray-100">
-          From The Ecosystem
+          From The Reblur Kit
         </h2>
       </div>
     </div>
