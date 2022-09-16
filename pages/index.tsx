@@ -1,6 +1,4 @@
-import { Banner, Bio } from 'components';
-import Footer from 'components/nav/Footer';
-import Navbar from 'components/nav/Navbar';
+import { Banner } from 'components';
 import Head from 'next/head';
 
 export default function Main() {
@@ -10,12 +8,9 @@ export default function Main() {
         <title>Tatenda. C. Chinyamakobvu - Senior Fullstack Engineer</title>
       </Head>
       <div className="main-bg">
-        <Navbar />
-        <div className="container max-w-5xl px-4 py-12 mx-auto">
+        <div className="container max-w-5xl px-4 pt-12 mx-auto">
           <Banner />
-          <Bio />
         </div>
-        <Footer />
       </div>
     </div>
   );

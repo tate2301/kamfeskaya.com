@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/ecosystem';
+import EcosystemLayout from 'components/layouts/reblur';
 
 export default function TWizard() {
   return (
@@ -13,8 +13,8 @@ export default function TWizard() {
         </p>
         <div className="flex items-center justify-center w-full gap-4 py-8">
           <div className="max-w-md mx-auto">
-            <button className="w-full px-6 py-3 font-mono font-semibold border-2 rounded-full dark:bg-gray-700 bg-gray-50 dark:text-white text-zinc-800 border-zinc-600">
-              yarn add @pagka/twizard
+            <button className="w-full px-6 py-3 font-semibold border-2 rounded-full dark:bg-gray-700 bg-gray-50 dark:text-white text-zinc-800 border-zinc-600">
+              yarn add @reblur/twizard
             </button>
           </div>
         </div>

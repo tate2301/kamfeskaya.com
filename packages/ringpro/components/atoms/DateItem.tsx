@@ -38,7 +38,7 @@ const SmallDateItem = ({
         dayIdx === days.length - 1 && 'rounded-br-lg',
       )}
     >
-      <Link href={`/ecosystem/ringpro/workspaces/default/date/${day.date}`}>
+      <Link href={`/reblur/ringpro/workspaces/default/date/${day.date}`}>
         <a>
           <time
             dateTime={day.date}

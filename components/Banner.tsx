@@ -63,9 +63,9 @@ export default function Banner() {
         <span id="revolution">build revolutionary products</span> that are easy
         to use. I am constantly building new products, experimenting on web
         development stuff, learning new stuff,{' '}
-        <span id="ui">designing good interfaces 💎 iii90000</span>, hacking into
-        some of the most secure systems in the world (just kidding), trying to
-        make the <span id="world">world 🌍 suck less with my work</span>.
+        <span id="ui">designing beautiful interfaces 💎</span>, hacking into
+        some of the most secure systems in the world (just kidding) and trying
+        to make the <span id="world">world 🌍 suck less with my work</span>.
       </p>
     </div>
   );

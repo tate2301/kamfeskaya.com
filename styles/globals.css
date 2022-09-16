@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
+@import './prism.css';
+
 @tailwind utilities;
 
 iframe {
@@ -87,4 +89,20 @@ h5 {
     ),
     radial-gradient(circle at 85% 30%, #d8f3f6, rgba(255, 255, 255, 0) 25%);
   max-height: 100vh;
+}
+
+.chart-art {
+  pointer-events: none;
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  right: -200px;
+  height: 700px;
+  background-image: radial-gradient(
+    ellipse 75% 700px at 35% calc(100% + 100px),
+    var(--colors-teal8) 20%,
+    var(--colors-cyan3),
+    var(---transparent)
+  );
+  transform: rotate(-10deg);
 }

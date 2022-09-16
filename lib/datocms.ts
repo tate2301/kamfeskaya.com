@@ -14,3 +14,27 @@ export function request({ query, variables, includeDrafts, excludeInvalid }) {
   const client = new GraphQLClient('https://graphql.datocms.com', { headers });
   return client.request(query, variables);
 }
+
+export const responsiveImageFragment = `
+
+    srcSet
+    webpSrcSet
+    sizes
+    src
+    width
+    height
+    aspectRatio
+    alt
+    title
+    base64
+  
+`;
+
+export const metaTagsFragment = `
+    
+    attributes
+    content
+    tag
+    
+  
+`;

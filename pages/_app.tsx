@@ -5,15 +5,31 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { darkTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { WagmiConfig } from 'wagmi';
 import { chains, wagmiClient } from 'lib/rainbowkit';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 // @ts-ignore
 import mixpanel from 'mixpanel-browser';
 import { useRouter } from 'next/router';
 
+import 'focus-visible';
+import Footer from 'components/nav/Footer';
+import Navbar from 'components/nav/Navbar';
+
 const MIXPANEL_KEY = process.env.MIXPANEL_KEY;
+
+function usePrevious(value: string | undefined) {
+  let ref = useRef();
+
+  useEffect(() => {
+    // @ts-ignore
+    ref.current = value;
+  }, [value]);
+
+  return ref.current;
+}
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
+  let previousPathname = usePrevious(router.pathname);
 
   useEffect(() => {
     mixpanel.init(MIXPANEL_KEY, {
@@ -30,9 +46,11 @@ function App({ Component, pageProps }: AppProps) {
         theme={darkTheme()}
         chains={chains}
       >
-        <div className="text-lg text-gray-500 lg:text-xl ">
-          <Component {...pageProps} />
+        <Navbar />
+        <div className="h-auto text-base text-gray-500">
+          <Component {...pageProps} previousPathname={previousPathname} />
         </div>
+        <Footer />
       </RainbowKitProvider>
     </WagmiConfig>
   );

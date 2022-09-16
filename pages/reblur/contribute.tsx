@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/ecosystem';
+import EcosystemLayout from 'components/layouts/reblur';
 
 export default function Contribute() {
   return (

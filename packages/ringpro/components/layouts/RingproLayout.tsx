@@ -26,7 +26,7 @@ export default function RingproLayout({
       name={name ? name + ' - ' : undefined ?? 'RingPro'}
       navigation={navigation.map((m) => ({
         ...m,
-        href: `/ecosystem/ringpro/${m.href}`,
+        href: `/reblur/ringpro/${m.href}`,
       }))}
       userNavigation={userNavigation}
     >
