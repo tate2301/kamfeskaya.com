@@ -9,9 +9,6 @@ export default function Navbar() {
             <Link href={'/'}>
               <a className="text-base ">Home</a>
             </Link>
-            <Link href={'/'}>
-              <a className="text-base ">Case Studies</a>
-            </Link>
             <Link href={'/reblur'}>
               <a className="text-base ">Reblur</a>
             </Link>
