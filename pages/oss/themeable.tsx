@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 
 export default function Themeable() {
   return (
@@ -14,7 +14,7 @@ export default function Themeable() {
         <div className="flex items-center justify-center w-full gap-4 py-8">
           <div className="max-w-md mx-auto">
             <button className="w-full px-6 py-3 font-semibold border-2 rounded-full bg-gray-50 text-zinc-800 border-zinc-300">
-              yarn add @reblur/themeable
+              yarn add @OSS/themeable
             </button>
           </div>
         </div>

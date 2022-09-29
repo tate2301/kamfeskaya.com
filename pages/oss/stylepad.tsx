@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 
 export default function Stylepad() {
   return (

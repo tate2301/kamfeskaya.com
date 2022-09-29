@@ -11,7 +11,7 @@ export default function EcosystemLayout({
   return (
     <div className={`block min-h-screen dark:bg-gray-900 w-screen`}>
       <Head>
-        <title>{name} | Reblur</title>
+        <title>{name} | OSS</title>
       </Head>
       <div className="fixed z-0 w-screen h-screen ${bg}-bg" />
       <div className={`text-base`}>

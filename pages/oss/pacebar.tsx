@@ -1,8 +1,8 @@
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 
 export default function Burnouts() {
   return (
-    <EcosystemLayout name="burnouts 🔥" bg="fbpixel">
+    <EcosystemLayout name="Pacebar" bg="fbpixel">
       <div className="flex flex-col items-center justify-center px-4 py-12 text-center">
         <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-gray-800 dark:text-gray-100 md:text-6xl">
           Build your tribe and get more done.

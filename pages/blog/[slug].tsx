@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 import { request } from 'lib/datocms';
 import { formatDate } from 'lib/formatDate';
 import Head from 'next/head';

@@ -8,47 +8,39 @@ import logoCosmos from 'images/logos/cosmos.svg';
 import logoHelioStream from 'images/logos/helio-stream.svg';
 import logoOpenShuttle from 'images/logos/open-shuttle.svg';
 import logoPlanetaria from 'images/logos/planetaria.svg';
-import EcosystemLayout from 'components/layouts/reblur';
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import Link from 'next/link';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 import { SVGProps } from 'react';
 
 const projects = [
   {
-    name: 'Burnout Pages',
+    name: 'Pacebar',
     description: 'Build your tribe and get more done.',
-    link: { href: '/reblur/burnouts', label: 'burnout.page' },
+    link: { href: '/oss/pacebar', label: 'pacebar.xyz' },
     logo: logoPlanetaria,
   },
   {
     name: 'Telescope',
     description: 'No-BS financial projections to get more done.',
-    link: { href: '/reblur/telescope', label: 'github.com' },
+    link: { href: '/oss/telescope', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
     name: 'Shorty',
     description: 'Use blockchain for everyday things.',
-    link: { href: '/reblur/shorty', label: 'github.com' },
+    link: { href: '/oss/shorty', label: 'github.com' },
     logo: logoHelioStream,
-  },
-  {
-    name: 'Discreet',
-    description: 'Private native smart contracts powered by Sisu Network.',
-    link: { href: '/reblur/eip-2301', label: 'github.com' },
-    logo: logoCosmos,
   },
   {
     name: 'FB Pixel',
     description: 'Facebook analytics for 10x developers.',
-    link: { href: '/reblur/shorty', label: 'github.com' },
-    logo: logoHelioStream,
+    link: { href: '/oss/shorty', label: 'github.com' },
+    logo: logoCosmos,
   },
   {
     name: 'Twizard',
     description: 'Switch between color modes effortlessly with TailwindCSS',
     link: {
-      href: '/reblur/twizard',
+      href: '/oss/twizard',
       label: 'github.com/Pagka/twizard',
     },
     logo: logoOpenShuttle,
@@ -56,7 +48,7 @@ const projects = [
   {
     name: 'Web3 wtf',
     description: 'Web3 Engineering patterns that will make you say wtf!',
-    link: { href: '/reblur/web3wtf', label: 'github.com' },
+    link: { href: '/oss/web3wtf', label: 'github.com' },
     logo: logoAnimaginary,
   },
 ];
@@ -74,52 +66,19 @@ function LinkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
 
 export default function Projects() {
   return (
-    <EcosystemLayout name={'Reblur'} bg={'fbpixel'}>
+    <EcosystemLayout name={'OSS'} bg={'fbpixel'}>
       <Head>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
         />
       </Head>
-      <div className="flex flex-col justify-center px-4 py-12 ">
-        <h2 className="py-6 text-4xl font-semibold text-radix-slate-slate12 dark:text-gray-100 md:text-6xl">
-          ReblurDAO respects your privacy.
-        </h2>
-        <p className="pb-4 text-lg font-base dark:text-gray-300">
-          Welcome to the next generation internet. Here is an internet where you
-          choose who accesses what part of your personal data. An internet where
-          your privacy is respected. All of this powered by an ecosystem of
-          products backed by the community and not power-hungry{' '}
-          <span className="strikethrough">Venture Capitalists</span>.
-        </p>
-        <div className="flex gap-4 pt-8">
-          <Link href="/reblur/contribute">
-            <a>
-              <button
-                id="contribute"
-                className="flex items-center w-full gap-4 px-6 py-3 font-medium border-2 rounded-md bg-radix-slate-slate12 dark:bg-white dark:text-gray-800 dark:border-gray-800 text-zinc-50 "
-              >
-                Get $RBLR tokens <ArrowRightIcon />
-              </button>
-            </a>
-          </Link>
-          <Link href="/reblur/contribute">
-            <a>
-              <button
-                id="contribute"
-                className="flex items-center w-full gap-4 px-6 py-3 font-medium border-2 rounded-md border-radix-slate-slate12 dark:border-gray- dark:text-gray-100 dark:border-gray-100 text-zinc-800 "
-              >
-                Read the Whitepaper <ArrowRightIcon />
-              </button>
-            </a>
-          </Link>
-        </div>
-      </div>
-      <div className="px-4 py-12 mt-12">
-        <p className="font-medium text-orange-600">Why Should We?</p>
+      <div className="px-4 py-12">
+        <p className="font-medium text-orange-600">What is my purpose?</p>
         <h3 className="text-4xl font-medium lg:text-4xl text-radix-slate-slate12 dark:text-gray-50">
-          Building a safer and <br />
-          privacy respecting internet.
+          Changing the world
+          <br />
+          by building tools that empower.
         </h3>
         <div className="grid grid-cols-2 gap-8 mt-8">
           <div className="col-span-2 md:col-span-1">
@@ -127,61 +86,31 @@ export default function Projects() {
               Open Source. Open Standards.
             </h4>
             <p className="pt-4">
-              ReblurDAO is built on the ideas of Open Source software and we are
-              open about our standards. We believe this way we allow the
-              brightest minds to pitch in and help propell technology in the
-              right direction. The DAO is built to power all the Open Source
-              efforts in the Web3 space.
+              The majority of the projects listed here are Open-Source. The
+              exceptions are client work where I will have signed an NDA or
+              anything else where common sense would agree that it should not be
+              Open Source work. I invite anyone reading this to reach out and
+              contribute on their favorite project here.
             </p>
           </div>
           <div className="col-span-2 md:col-span-1">
             <h4 className="text-xl font-bold text-radix-slate-slate12">
-              Privacy. Trust. Non-Custodial.
+              Privacy. Innovation. Simplicity.
             </h4>
             <p className="pt-4">
-              Projects can request private user data in a privacy preserving
-              way, using Zero-Knowledge Authorization. All projects are audited
-              to ensure their practise with user data aligns with the core
-              values of ReblurDAO. Most importantly, the user has full control
-              over who access what part of their data.
+              The mission is to create digital products that help in our
+              day-to-day living while respecting the privacy of the user.
+              Software engineers are at the core of innovation in technology and
+              it is our right to build tools that are simple yet innovative
+              whilst respecting the privacy of the user.
             </p>
           </div>
         </div>
-        <div className="relative mt-8 overflow-y-visible">
-          <div className="w-full lg:w-1/2">
-            <div className="grid grid-cols-3">
-              <div className="col-span-1">
-                <h2 className="text-5xl font-bold text-radix-slate-slate12">
-                  10+
-                </h2>
-                <p className="mt-2">Projects</p>
-              </div>
-              <div className="col-span-1">
-                <h2 className="text-5xl font-bold text-radix-slate-slate12">
-                  20+
-                </h2>
-                <p className="mt-2">Contributors</p>
-              </div>
-              <div className="col-span-1">
-                <h2 className="text-5xl font-bold text-radix-slate-slate12">
-                  $5k+
-                </h2>
-                <p className="mt-2">Funds Granted</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div className="flex flex-col px-4 py-12 mt-8">
-        <p className="font-medium text-orange-600">From The Developers</p>
+      <div className="flex flex-col px-4 py-12">
         <h2 className="text-4xl font-medium lg:text-4xl text-radix-slate-slate12 dark:text-gray-50">
-          The things we are making.
+          Projects
         </h2>
-        <p className="mt-1 text-base dark:text-gray-200">
-          ReblurDAO is building an ecosystem of everyday products. Some of these
-          projects may not be directly related to Web3 and dApps but help to
-          realise the ultimate goal.
-        </p>
         <div className="mt-8">
           <ul
             role="list"

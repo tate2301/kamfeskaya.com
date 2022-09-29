@@ -1,11 +1,11 @@
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 
 export default function Contribute() {
   return (
     <EcosystemLayout name={'Contribute'}>
       <div className="px-3 py-8">
         <h2 className="max-w-3xl text-2xl font-medium lg:text-5xl text-radix-slate-slate12">
-          Contribute to Reblur Kit.
+          Contribute to OSS Kit.
         </h2>
       </div>
       <div className="flex px-3 py-6">
@@ -16,7 +16,7 @@ export default function Contribute() {
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
-          title="Contribute to Reblur Kit"
+          title="Contribute to OSS Kit"
         />
       </div>
     </EcosystemLayout>

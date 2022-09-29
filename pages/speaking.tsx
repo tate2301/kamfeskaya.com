@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { Card } from 'components/Card';
 import { Section } from 'components/Section';
 import { SimpleLayout } from 'components/SimpleLayout';
-import EcosystemLayout from 'components/layouts/reblur';
+import EcosystemLayout from 'components/layouts/OSSLayout';
 
 function SpeakingSection({ children, ...props }: any) {
   return (
