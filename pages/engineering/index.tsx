@@ -8,39 +8,41 @@ import logoCosmos from 'images/logos/cosmos.svg';
 import logoHelioStream from 'images/logos/helio-stream.svg';
 import logoOpenShuttle from 'images/logos/open-shuttle.svg';
 import logoPlanetaria from 'images/logos/planetaria.svg';
-import EcosystemLayout from 'components/layouts/OSSLayout';
+import web3wtf from 'images/logos/web3wtf.svg';
+
+import EcosystemLayout from 'components/layouts/MarketingPageLayout';
 import { SVGProps } from 'react';
 
 const projects = [
   {
     name: 'Pacebar',
     description: 'Build your tribe and get more done.',
-    link: { href: '/oss/pacebar', label: 'pacebar.xyz' },
+    link: { href: '/Engineering/pacebar', label: 'pacebar.xyz' },
     logo: logoPlanetaria,
   },
   {
     name: 'Telescope',
     description: 'No-BS financial projections to get more done.',
-    link: { href: '/oss/telescope', label: 'github.com' },
+    link: { href: '/Engineering/telescope', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
     name: 'Shorty',
     description: 'Use blockchain for everyday things.',
-    link: { href: '/oss/shorty', label: 'github.com' },
+    link: { href: '/Engineering/shorty', label: 'github.com' },
     logo: logoHelioStream,
   },
   {
     name: 'FB Pixel',
     description: 'Facebook analytics for 10x developers.',
-    link: { href: '/oss/shorty', label: 'github.com' },
+    link: { href: '/Engineering/shorty', label: 'github.com' },
     logo: logoCosmos,
   },
   {
     name: 'Twizard',
     description: 'Switch between color modes effortlessly with TailwindCSS',
     link: {
-      href: '/oss/twizard',
+      href: '/Engineering/twizard',
       label: 'github.com/Pagka/twizard',
     },
     logo: logoOpenShuttle,
@@ -48,8 +50,8 @@ const projects = [
   {
     name: 'Web3 wtf',
     description: 'Web3 Engineering patterns that will make you say wtf!',
-    link: { href: '/oss/web3wtf', label: 'github.com' },
-    logo: logoAnimaginary,
+    link: { href: '/Engineering/web3wtf', label: 'github.com' },
+    logo: web3wtf,
   },
 ];
 
@@ -66,7 +68,7 @@ function LinkIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
 
 export default function Projects() {
   return (
-    <EcosystemLayout name={'OSS'} bg={'fbpixel'}>
+    <EcosystemLayout name={'Engineering'} bg={'fbpixel'}>
       <Head>
         <meta
           name="description"

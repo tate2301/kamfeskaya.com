@@ -1,11 +1,11 @@
-import EcosystemLayout from 'components/layouts/OSSLayout';
+import EcosystemLayout from 'components/layouts/MarketingPageLayout';
 
 export default function Contribute() {
   return (
     <EcosystemLayout name={'Contribute'}>
       <div className="px-3 py-8">
         <h2 className="max-w-3xl text-2xl font-medium lg:text-5xl text-radix-slate-slate12">
-          Contribute to OSS Kit.
+          Contribute to Engineering Kit.
         </h2>
       </div>
       <div className="flex px-3 py-6">
@@ -16,7 +16,7 @@ export default function Contribute() {
           frameBorder="0"
           marginHeight={0}
           marginWidth={0}
-          title="Contribute to OSS Kit"
+          title="Contribute to Engineering Kit"
         />
       </div>
     </EcosystemLayout>

@@ -106,3 +106,8 @@ h5 {
   );
   transform: rotate(-10deg);
 }
+
+.btn {
+  background: linear-gradient(16deg, #4d5aff, #b240ff 85%);
+  color: #ffffff;
+}

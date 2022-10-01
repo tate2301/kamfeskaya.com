@@ -10,7 +10,7 @@ const { chains, provider } = configureChains(
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()],
 );
 const { connectors } = getDefaultWallets({
-  appName: 'OSS',
+  appName: 'Engineering',
   chains,
 });
 const wagmiClient = createClient({

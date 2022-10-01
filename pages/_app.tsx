@@ -11,8 +11,6 @@ import mixpanel from 'mixpanel-browser';
 import { useRouter } from 'next/router';
 
 import 'focus-visible';
-import Footer from 'components/nav/Footer';
-import Navbar from 'components/nav/Navbar';
 
 const MIXPANEL_KEY = process.env.MIXPANEL_KEY;
 
@@ -46,11 +44,9 @@ function App({ Component, pageProps }: AppProps) {
         theme={darkTheme()}
         chains={chains}
       >
-        <Navbar />
         <div className="h-auto text-base text-gray-500">
           <Component {...pageProps} previousPathname={previousPathname} />
         </div>
-        <Footer />
       </RainbowKitProvider>
     </WagmiConfig>
   );

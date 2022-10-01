@@ -1,34 +1,8 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useEffect } from 'react';
 
-const roles = [
-  'Halfstack Developer',
-  'React Developer',
-  'Frontend Developer',
-  'Glorified Typist',
-  'Random Person',
-];
-const titles = [
-  'Blockchain Engineer',
-  'UI/UX Designer',
-  'Motorsport Legend',
-  'Software Engineer',
-  'Pencil Artist',
-  'Great Person',
-];
-const locations = [
-  'Harare, Zimbabwe',
-  'Gweru, Zimbabwe',
-  'Remote, Earth',
-  'Earth, Milky Way Galaxy',
-];
 export default function Banner() {
-  const [options] = useState({
-    role: roles[Math.floor(Math.random() * roles.length)],
-    title: titles[Math.floor(Math.random() * titles.length)],
-    location: locations[Math.floor(Math.random() * locations.length)],
-  });
-
   useEffect(() => {
     // Randomly pick one of the possible combinations
     /*setInterval(() => {
@@ -38,35 +12,65 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center py-12">
-      <div className="py-8">
+    <div className="flex flex-col justify-center min-h-[30vh] ">
+      <p className="pt-8 pb-2 text-sm font-medium text-orange-600">
+        Available for new projects
+      </p>
+      <div className="flex items-center gap-4 mb-8">
         <Image
           src={'/profile-pic.png'}
           alt={"Tatenda's profile picture"}
-          width={128}
-          height={128}
+          width={64}
+          height={64}
         />
+        <div className="flex flex-col">
+          <h4 className="text-xl font-medium text-slate-900">
+            Tatenda Christopher Chinyamakobvu
+          </h4>
+          <p>Product Designer + Fullstack Developer</p>
+        </div>
       </div>
-      <h1 className="text-3xl subpixel-antialiased font-medium tracking-tighter text-gray-800 dark:text-gray-200 lg:text-5xl">
-        Hey there! I&#39;m Tatenda, a{' '}
-        <span className="text-orange-600 dark:text-orange-400">
-          {` ${options?.role} `}
-        </span>{' '}
-        +
-        <span className="text-red-500 dark:text-red-400">
-          {` ${options?.title} `}
-        </span>
-        based in {` ${options?.location}`}.
-      </h1>
-      <p className="py-4 mt-8 text-xl">
-        I help startups and developers{' '}
-        <span id="revolution">build revolutionary products</span> that are easy
-        to use. I am constantly building new products, experimenting on web
-        development stuff, learning new stuff,{' '}
-        <span id="ui">designing beautiful interfaces 💎</span>, hacking into
-        some of the most secure systems in the world (just kidding) and trying
-        to make the <span id="world">world 🌍 suck less with my work</span>.
-      </p>
+      <div className="subpixel-antialiased tracking-tighter ">
+        <h2 className="text-xl font-medium text-slate-900">About</h2>
+        <p className="mt-2">
+          Hi I am Tatenda a Product Engineer & Fullstack Developer, I love
+          building intuitive applications that promote good mental health. I am
+          currently working on Pacebar, a platform for friends, family or fans
+          to support the people they care in about.I am on a mission to make
+          people feel less alone. . It&#39;s all about the journey, so enjoy it
+          with your fans and family. .
+        </p>
+      </div>
+
+      <div className="pt-12 ">
+        <h1 className="text-xl subpixel-antialiased font-medium text-gray-800 dark:text-gray-200">
+          What I have been working on
+        </h1>
+        <div className="py-4 text-base divide-y">
+          <div className="flex items-center gap-4">
+            <div className="w-10 h-10 rounded-full btn" />
+            <p>
+              <Link href={'/engineering/pacebar'}>
+                <a className="font-medium text-slate-800">Pacebar</a>
+              </Link>{' '}
+              - Track your goals in public and write your story with the fans.
+            </p>
+          </div>
+        </div>
+        <div className="py-4 text-base divide-y divide-gray-200">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-orange-500">
+              <p className="text-xl">👀</p>
+            </div>
+            <p>
+              <Link href={'/engineering/telescope'}>
+                <a className="font-medium text-slate-800">Telescope</a>
+              </Link>{' '}
+              - Forecast and optimize your SaaS pricing models.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

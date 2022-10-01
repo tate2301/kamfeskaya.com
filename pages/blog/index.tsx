@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Card } from 'components/Card';
-import EcosystemLayout from 'components/layouts/OSSLayout';
+import EcosystemLayout from 'components/layouts/MarketingPageLayout';
 import { formatDate } from 'lib/formatDate';
 
 import { request } from 'lib/datocms';

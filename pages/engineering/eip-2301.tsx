@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/OSSLayout';
+import EcosystemLayout from 'components/layouts/MarketingPageLayout';
 
 export default function EIP2301() {
   return (

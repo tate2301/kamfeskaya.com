@@ -1,4 +1,4 @@
-import EcosystemLayout from 'components/layouts/OSSLayout';
+import EcosystemLayout from 'components/layouts/MarketingPageLayout';
 
 export default function FBPixel() {
   return (
@@ -14,7 +14,7 @@ export default function FBPixel() {
         <div className="flex items-center justify-center w-full gap-4 py-8">
           <div className="max-w-md mx-auto">
             <button className="w-full px-6 py-3 font-mono font-semibold border-2 rounded-full dark:bg-gray-700 dark:text-gray-100 dark:border-zinc-700 bg-gray-50 text-zinc-800 border-zinc-300">
-              yarn add @OSS/fbpixel
+              yarn add @Engineering/fbpixel
             </button>
           </div>
         </div>
