@@ -22,7 +22,7 @@ export default function EcosystemLayout({
       />
 
       <div className={`text-base`}>
-        <div className="container max-w-5xl mx-auto">{children}</div>
+        <div className="container max-w-3xl mx-auto">{children}</div>
       </div>
     </div>
   );

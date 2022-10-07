@@ -99,7 +99,7 @@ export default function Blog({
   return (
     <EcosystemLayout name="Blog">
       <div className="max-w-2xl py-12">
-        <h1 className="text-4xl font-bold lg:text-5xl text-radix-slate-slate12">
+        <h1 className="text-3xl font-bold text-radix-slate-slate12">
           My thoughts on 💻 software development, ⛓ blockchain, 🫀 life, 💰
           finance and 🏎 motorsport.
         </h1>

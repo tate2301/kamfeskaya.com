@@ -13,7 +13,7 @@ export default function Banner() {
 
   return (
     <div className="flex flex-col justify-center min-h-[30vh] ">
-      <p className="pt-8 pb-2 text-sm font-medium text-orange-600">
+      <p className="pt-8 pb-2 text-sm text-orange-600">
         Available for new projects
       </p>
       <div className="flex items-center gap-4 mb-8">
@@ -30,7 +30,7 @@ export default function Banner() {
           <p>Product Designer + Fullstack Developer</p>
         </div>
       </div>
-      <div className="subpixel-antialiased tracking-tighter ">
+      <div className="subpixel-antialiased ">
         <h2 className="text-xl font-medium text-slate-900">About</h2>
         <p className="mt-2">
           Hi I am Tatenda a Product Engineer & Fullstack Developer, I love
@@ -43,33 +43,133 @@ export default function Banner() {
       </div>
 
       <div className="pt-12 ">
-        <h1 className="text-xl subpixel-antialiased font-medium text-gray-800 dark:text-gray-200">
-          What I have been working on
+        <h1 className="mb-4 text-2xl subpixel-antialiased font-bold text-gray-800 dark:text-gray-200">
+          Highlights
         </h1>
-        <div className="py-4 text-base divide-y">
-          <div className="flex items-center gap-4">
-            <div className="w-10 h-10 rounded-full btn" />
-            <p>
+        <div className="flex flex-col gap-8 md:gap-16">
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2022</div>
+            <div className="flex-1">
               <Link href={'/engineering/pacebar'}>
-                <a className="font-medium text-slate-800">Pacebar</a>
-              </Link>{' '}
-              - Track your goals in public and write your story with the fans.
-            </p>
-          </div>
-        </div>
-        <div className="py-4 text-base divide-y divide-gray-200">
-          <div className="flex items-center gap-4">
-            <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-orange-500">
-              <p className="text-xl">👀</p>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">Pacebar</h5>
+                </a>
+              </Link>
+              <p>
+                This right here is my baby, my favorite. The idea around Pacebar
+                is to build a platform that encourages good mental health, self
+                development and community building. It is my latest project and
+                I am bootstrapping it in my free time. As expected in an
+                IndieHacker project, I am the Project Manager, Product Designer,
+                DevOps Engineer and Quality Assurance guy. Wearing these
+                multiple hats I have made a couple decisions; I am building with
+                Next.js 12, Planetscale, TailwindCSS and GraphQL.
+                <br />
+                <br />
+                Ever want to know how you’re doing? Stay connected with your
+                fans and share life’s big moments 🎉 through Pacebar.
+              </p>
             </div>
-            <p>
-              <Link href={'/engineering/telescope'}>
-                <a className="font-medium text-slate-800">Telescope</a>
-              </Link>{' '}
-              - Forecast and optimize your SaaS pricing models.
-            </p>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2022</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="font-bold text-gray-700">TreatDAO</h5>
+                  <p className="mb-2 text-blue-500">https://treatdao.com</p>
+                </a>
+              </Link>
+              <p>
+                I designed and led the development team for a community platform
+                that allows creators to sell content as NFTS. In this project I
+                designed the UI and worked heavily on the frontend which we
+                built in Next.js. I also led in the design of the social
+                architecture of the platform, things including recommendations,
+                determing the suitable network effects and ensuring the privacy
+                of both creators and fans is protected. TreatDAO is a community
+                platform that allows creators to sell both NSFW and SFW content
+                directly to fans in the form of NFTs. It also allows users to
+                subscribe to a creator profile(the OnlyFans style) so they can
+                have access to all the content the creator shares.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2022</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">Shorty</h5>
+                </a>
+              </Link>
+              <p>
+                Shorty is a platform designed around URL shortening and privacy
+                on the internet. It also allows users to share self-deleting
+                notes, password protected URLs and analytics for all the urls
+                and notes they share.Send your loved ones a private message.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+      <div className="pt-12">
+        <h1 className="mb-4 text-2xl font-bold text-gray-700">
+          Work Experience
+        </h1>
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2022-now</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">
+                    IndieHacker at Pacebar
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2021-now</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">
+                    Lead Engineer at TreatDAO
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2021-2022</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">
+                    Product Designer at Pagka
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">2019-2021</div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-bold text-gray-700">
+                    Product Designer at Techzim
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="pt-12">
+        <h1 className="font-medium text-gray-700">Contact</h1>
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ function App({ Component, pageProps }: AppProps) {
         theme={darkTheme()}
         chains={chains}
       >
-        <div className="h-auto text-base text-gray-500">
+        <div className="h-auto text-base text-gray-700/80">
           <Component {...pageProps} previousPathname={previousPathname} />
         </div>
       </RainbowKitProvider>
