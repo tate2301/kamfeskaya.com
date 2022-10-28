@@ -4,7 +4,7 @@ export default function Divider() {
   return (
     <EcosystemLayout name="fbpixel">
       <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 text-center">
-        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-gray-800 md:text-6xl">
+        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-slate-800 md:text-6xl">
           Look into the future of your projects.
         </h2>
         <p className="max-w-xl pb-4 text-xl">

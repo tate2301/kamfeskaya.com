@@ -99,7 +99,7 @@ export default function Blog({
   return (
     <EcosystemLayout name="Blog">
       <div className="max-w-2xl py-12">
-        <h1 className="text-3xl font-bold text-radix-slate-slate12">
+        <h1 className="text-3xl font-medium text-slate-900">
           My thoughts on 💻 software development, ⛓ blockchain, 🫀 life, 💰
           finance and 🏎 motorsport.
         </h1>
@@ -108,7 +108,7 @@ export default function Blog({
           something you think I would love to share here, thanks.
         </p>
       </div>
-      <div className="py-12 mt-8 md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+      <div className="py-12 mt-8 lg:border-l lg:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex flex-col max-w-3xl space-y-16">
           {data.allArticles.map((article: any) => (
             <Article key={article.slug} article={article} />

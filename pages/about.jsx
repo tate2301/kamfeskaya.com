@@ -62,7 +62,7 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            <h1 className="text-4xl font-medium tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
               I’m Spencer Sharp. I live in New York City, where I design the
               future.
             </h1>

@@ -4,10 +4,10 @@ export default function TWizard() {
   return (
     <EcosystemLayout name="twizard">
       <div className="flex flex-col items-center justify-center min-h-screen px-4 py-24 text-center">
-        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-gray-800 dark:text-gray-100 md:text-6xl">
+        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-slate-800 dark:text-slate-100 md:text-6xl">
           Don&#39;t waste time redesigning the wheel
         </h2>
-        <p className="max-w-xl pb-4 text-xl font-medium text-gray-600 dark:text-gray-300">
+        <p className="max-w-xl pb-4 text-xl font-medium text-slate-600 dark:text-slate-300">
           Twiz is a collection of ready-made TailwindCSS UI components to save
           you time on your next project.
         </p>

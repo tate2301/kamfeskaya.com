@@ -29,9 +29,9 @@ export default function Bio() {
           🇿🇼 Zimabwean startups have been facing a really big problem with
           processing local payments online. I personally believe that{' '}
           <Link href={'https://paynow.co.zw'}>
-            <a className="font-medium text-radix-slate-slate12">Paynow</a>
+            <a className="font-medium text-slate-900">Paynow</a>
           </Link>{' '}
-          <span className="font-medium text-radix-slate-slate12">
+          <span className="font-medium text-slate-900">
             is at the core of the it, for every single one of all Zimbabwean
             Founders 🕵🏽‍♀️ 👨🏻‍⚕️ 👨🏾‍💻 👩🏾‍💻 🧑🏾‍🔧 🧑🏾‍🎓
           </span>{' '}
@@ -72,7 +72,7 @@ export default function Bio() {
           The Developer platform for Developers, by Developers! 🎉 🎉 🎉
         </p>
         <div className="py-4 mt-4">
-          <p className="py-4 font-semibold text-gray-500 dark:text-gray-100">
+          <p className="py-4 font-semibold text-slate-500 dark:text-slate-100">
             Tatenda Christopher Chinyamakobvu
             <br />
             <span id="name" className="font-medium">

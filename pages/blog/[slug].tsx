@@ -21,7 +21,7 @@ export default function BlogPage({ subscription }: any) {
         <p className="pb-2 font-medium text-orange-600">
           {formatDate(new Date().toDateString())}
         </p>
-        <h1 className="max-w-2xl text-3xl font-bold lg:text-5xl text-radix-slate-slate12">
+        <h1 className="max-w-2xl text-3xl font-medium lg:text-5xl text-slate-900">
           {article.title}
         </h1>
         <div className="w-full h-auto py-8">

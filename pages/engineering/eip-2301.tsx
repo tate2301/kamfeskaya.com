@@ -4,10 +4,10 @@ export default function EIP2301() {
   return (
     <EcosystemLayout name="EIP-2301">
       <div className="flex flex-col items-center justify-center px-4 py-24 text-center">
-        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-gray-800 md:text-6xl">
+        <h2 className="max-w-2xl py-8 mx-auto text-4xl font-semibold text-slate-800 md:text-6xl">
           Authenticated Smart Contracts, ever heard of them?
         </h2>
-        <p className="max-w-xl pb-4 text-xl font-medium text-gray-600">
+        <p className="max-w-xl pb-4 text-xl font-medium text-slate-600">
           Discreet is a new standard for private smart contracts powered by Sisu
           Network. It enables you to define private storage and enforce
           authentication rules for data access on the blockchain.

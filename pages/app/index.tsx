@@ -8,7 +8,7 @@ export default function CollaborateApp() {
           <p className="text-orange">
             This page is the beginning of a loft of great things.
           </p>
-          <h1 className="text-5xl font-bold lg:text-7xl text-slate-800">
+          <h1 className="text-5xl font-medium lg:text-7xl text-slate-800">
             Bringing your ideas to life!
           </h1>
           <p className="mt-4">

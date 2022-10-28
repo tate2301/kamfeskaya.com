@@ -1,6 +1,6 @@
 export function Section({ title, children }: any) {
   return (
-    <section className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
+    <section className="lg:border-l lg:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
       <div className="grid items-baseline max-w-3xl grid-cols-1 gap-y-8 md:grid-cols-4">
         <h2 className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
           {title}

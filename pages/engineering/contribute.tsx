@@ -4,7 +4,7 @@ export default function Contribute() {
   return (
     <EcosystemLayout name={'Contribute'}>
       <div className="px-3 py-8">
-        <h2 className="max-w-3xl text-2xl font-medium lg:text-5xl text-radix-slate-slate12">
+        <h2 className="max-w-3xl text-2xl font-medium lg:text-5xl text-slate-900">
           Contribute to Engineering Kit.
         </h2>
       </div>

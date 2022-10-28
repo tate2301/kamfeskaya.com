@@ -19,6 +19,70 @@ export default function InteractiveResume() {
           <p>Product Designer + Fullstack Developer</p>
         </div>
       </div>
+      <div className="pt-12">
+        <h1 className="mb-4 text-2xl font-medium text-slate-700">
+          Work Experience
+        </h1>
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">
+              August 2022<span className="mx-2">-</span>now
+            </div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-medium text-slate-700">
+                    IndieHacker at Pacebar
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">
+              Mar 2022<span className="mx-2">-</span>now
+            </div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-medium text-slate-700">
+                    Lead Engineer at TreatDAO
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">
+              July 2021<span className="mx-2">-</span>now
+            </div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-medium text-slate-700">
+                    Freelance Engineer at Forge
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-full gap-4 md:gap-8">
+            <div className="w-full flex-noshrink md:w-1/4">
+              {' '}
+              Oct 2019<span className="mx-2">-</span>Sept 2021
+            </div>
+            <div className="flex-1">
+              <Link href={'/engineering/pacebar'}>
+                <a>
+                  <h5 className="mb-2 font-medium text-slate-700">
+                    Product Designer at Techzim
+                  </h5>
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="w-full py-24">
         <h2 className="text-2xl font-medium text-slate-900">
           Retainer Subscriptions

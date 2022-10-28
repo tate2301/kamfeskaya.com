@@ -5,12 +5,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Graphik';
-  font-weight: 400;
-  src: url('fonts/graphik-regular.woff2') format('woff2');
-}
-
-@font-face {
   font-family: 'Helvetica';
   font-weight: 400;
   src: url('fonts/helvetica.woff2') format('woff2');
@@ -31,15 +25,6 @@
 *,
 body {
   font-family: 'Helvetica', sans-serif;
-  font-weight: 400 !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Untitled Sans', sans-serif;
 }
 
 .twizard-bg {

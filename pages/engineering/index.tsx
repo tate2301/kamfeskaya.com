@@ -17,32 +17,32 @@ const projects = [
   {
     name: 'Pacebar',
     description: 'Build your tribe and get more done.',
-    link: { href: '/Engineering/pacebar', label: 'pacebar.xyz' },
+    link: { href: '/engineering/pacebar', label: 'pacebar.xyz' },
     logo: logoPlanetaria,
   },
   {
     name: 'Telescope',
     description: 'No-BS financial projections to get more done.',
-    link: { href: '/Engineering/telescope', label: 'github.com' },
+    link: { href: '/engineering/telescope', label: 'github.com' },
     logo: logoAnimaginary,
   },
   {
     name: 'Shorty',
     description: 'Use blockchain for everyday things.',
-    link: { href: '/Engineering/shorty', label: 'github.com' },
+    link: { href: '/engineering/shorty', label: 'github.com' },
     logo: logoHelioStream,
   },
   {
-    name: 'FB Pixel',
-    description: 'Facebook analytics for 10x developers.',
-    link: { href: '/Engineering/shorty', label: 'github.com' },
+    name: 'Zscape',
+    description: 'Trading Quants, Incentive Programs & Exchange.',
+    link: { href: '/engineering/shorty', label: 'github.com' },
     logo: logoCosmos,
   },
   {
     name: 'Twizard',
     description: 'Switch between color modes effortlessly with TailwindCSS',
     link: {
-      href: '/Engineering/twizard',
+      href: '/engineering/twizard',
       label: 'github.com/Pagka/twizard',
     },
     logo: logoOpenShuttle,
@@ -50,7 +50,7 @@ const projects = [
   {
     name: 'Web3 wtf',
     description: 'Web3 Engineering patterns that will make you say wtf!',
-    link: { href: '/Engineering/web3wtf', label: 'github.com' },
+    link: { href: '/engineering/web3wtf', label: 'github.com' },
     logo: web3wtf,
   },
 ];
@@ -76,41 +76,37 @@ export default function Projects() {
         />
       </Head>
       <div className="px-4 py-12">
-        <p className="font-medium text-orange-600">What is my purpose?</p>
-        <h3 className="text-4xl font-medium lg:text-4xl text-radix-slate-slate12 dark:text-gray-50">
+        <p className="font-medium text-orange-600">What am I doing?</p>
+        <h3 className="text-4xl font-medium lg:text-4xl text-slate-900 dark:text-slate-50">
           Changing the world
           <br />
           by building tools that empower.
         </h3>
         <div className="grid grid-cols-2 gap-8 mt-8">
           <div className="col-span-2 md:col-span-1">
-            <h4 className="text-xl font-bold text-radix-slate-slate12">
-              Open Source. Open Standards.
+            <h4 className="text-xl font-medium text-slate-900">
+              Building for the everyone.
             </h4>
             <p className="pt-4">
-              The majority of the projects listed here are Open-Source. The
-              exceptions are client work where I will have signed an NDA or
-              anything else where common sense would agree that it should not be
-              Open Source work. I invite anyone reading this to reach out and
-              contribute on their favorite project here.
+              I am a cool guy and you can definitely hit me up if you think I
+              might be able to help you build something that benefits humanity
+              as a whole or just a fraction of it.
             </p>
           </div>
           <div className="col-span-2 md:col-span-1">
-            <h4 className="text-xl font-bold text-radix-slate-slate12">
+            <h4 className="text-xl font-medium text-slate-900">
               Privacy. Innovation. Simplicity.
             </h4>
             <p className="pt-4">
-              The mission is to create digital products that help in our
-              day-to-day living while respecting the privacy of the user.
               Software engineers are at the core of innovation in technology and
-              it is our right to build tools that are simple yet innovative
+              it is our right to build tools that are simple yet disruptive
               whilst respecting the privacy of the user.
             </p>
           </div>
         </div>
       </div>
       <div className="flex flex-col px-4 py-12">
-        <h2 className="text-4xl font-medium lg:text-4xl text-radix-slate-slate12 dark:text-gray-50">
+        <h2 className="text-4xl font-medium lg:text-4xl text-slate-900 dark:text-slate-50">
           Projects
         </h2>
         <div className="mt-8">
