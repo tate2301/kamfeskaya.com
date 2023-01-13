@@ -1,0 +1,17 @@
+{
+  "name": "kamfeskaya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp src/index.html dist/index.html && cp -r src/assets dist/assets && yarn tw-build",
+    "tw-build": "npx tailwindcss -i ./src/input.css -o ./dist/tw.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
